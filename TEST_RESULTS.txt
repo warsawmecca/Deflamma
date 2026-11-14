@@ -1,0 +1,74 @@
+test_bulk_prefetch_and_chronological_results_match (test_bootstrap.BootstrapTests.test_bulk_prefetch_and_chronological_results_match) ... ok
+test_interrupted_batch_does_not_publish_partial_state (test_bootstrap.BootstrapTests.test_interrupted_batch_does_not_publish_partial_state) ... ok
+test_missing_observation_does_not_invent_history (test_bootstrap.BootstrapTests.test_missing_observation_does_not_invent_history) ... Initial batch missing 2025-03-22 01:15:00+00:00: missing source
+Initial batch missing 2025-03-22 01:17:30+00:00: missing source
+ok
+test_missing_pixels_keep_fixed_grid_and_cadence_resets (test_release.GateTests.test_missing_pixels_keep_fixed_grid_and_cadence_resets) ... ok
+test_nine_cases_and_restart_every_sample (test_release.GateTests.test_nine_cases_and_restart_every_sample) ... ok
+test_active_archive_protected_completed_expired (test_release.RetentionTests.test_active_archive_protected_completed_expired) ... ok
+test_byte_cap_removes_oldest_without_waiting_for_age (test_release.RetentionTests.test_byte_cap_removes_oldest_without_waiting_for_age) ... ok
+test_cleanup_lock_prevents_simultaneous_writers (test_release.RetentionTests.test_cleanup_lock_prevents_simultaneous_writers) ... ok
+test_expiry_count_budget_and_external_symlink (test_release.RetentionTests.test_expiry_count_budget_and_external_symlink) ... ok
+test_over_budget_blocks_new_acquisition (test_release.RetentionTests.test_over_budget_blocks_new_acquisition) ... ok
+test_sqlite_rows_expire_and_watch_migration (test_release.RetentionTests.test_sqlite_rows_expire_and_watch_migration) ... ok
+test_auth_revocation_and_no_public_config (test_review.ReviewTests.test_auth_revocation_and_no_public_config) ... ok
+test_case_identity_is_never_reused_after_pruning (test_review.ReviewTests.test_case_identity_is_never_reused_after_pruning) ... ok
+test_expiry_not_extended_by_continuation_deletion_and_bounds (test_review.ReviewTests.test_expiry_not_extended_by_continuation_deletion_and_bounds) ... ok
+test_reopen_only_new_observation_stale_decision_and_later_episode (test_review.ReviewTests.test_reopen_only_new_observation_stale_decision_and_later_episode) ... ok
+test_actual_cases_restart_retry_and_gap (test_review.SigmaTests.test_actual_cases_restart_retry_and_gap) ... ok
+test_private_api_rejects_legacy_admin_header_and_cross_origin (test_review_http.ReviewHTTPTests.test_private_api_rejects_legacy_admin_header_and_cross_origin) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 7.291s
+
+OK
+
+DOM PASS: login, token input clearing, 8 SVG charts, decision, deletion, repeated-trigger re-review, logout
+
+
+2025-03-22 12:17:30 -> 12:20:00 KST | 3 candidate pixels / 16232 valid
+rank region latitude longitude previous_K current_K rise_K joint_score
+ 1 울산 35.40448 129.25364 312.67 319.66 +6.99 78.32
+ 2 울산 35.42943 129.24954 307.07 308.21 +1.14 35.99
+ 3 경남 35.29162 127.84059 305.53 306.30 +0.77 25.66
+INTEGRATION PASS: real 2025-03-22 12:20 sources, saved causal checkpoint -> 3 expected triggers, 3 private review cases, evidence, JSON/CSV/maps/series
+
+Actual case validation:
+[
+  {
+    "case": "sancheong2025",
+    "passed": true
+  },
+  {
+    "case": "uiseong2025",
+    "passed": true
+  },
+  {
+    "case": "ulju2025",
+    "passed": true
+  },
+  {
+    "case": "hamyang",
+    "passed": true
+  },
+  {
+    "case": "miryang",
+    "passed": true
+  },
+  {
+    "case": "uiseong",
+    "passed": true
+  },
+  {
+    "case": "gwangyang",
+    "passed": true
+  },
+  {
+    "case": "yesan",
+    "passed": true
+  },
+  {
+    "case": "nonfire_P0466C0528",
+    "passed": false
+  }
+]

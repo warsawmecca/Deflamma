@@ -1,0 +1,23 @@
+{
+  "format": "deflamma-skin-normals-v1",
+  "variable": "surface_skin_temperature",
+  "period": "1991-2020",
+  "calendar": "365_day",
+  "timezone": "UTC",
+  "hours_UTC": [
+    0,
+    6,
+    12,
+    18
+  ],
+  "source": "NOAA PSL NCEP/NCAR Reanalysis 1",
+  "source_url": "https://downloads.psl.noaa.gov/Datasets/ncep.reanalysis.derived/surface_gauss/skt.sfc.4Xday.ltm.1991-2020.nc",
+  "source_sha256": "f494fb2048874975f529681286d4ad210b0e4f0cb5773329fb00b80746aebd39",
+  "spatial_resolution": "Gaussian latitude ~1.9 degrees; longitude 1.875 degrees",
+  "interpolation": "bilinear in space; linear in 6-hour time; cyclic year; Feb29 same-hour Feb28/Mar1 mean",
+  "minimum_source_years": 30,
+  "limitation": "Coarse skin-temperature proxy; not 2m air temperature or clear-sky B07 brightness-temperature normals. No terrain correction.",
+  "land_mask_url": "https://downloads.psl.noaa.gov/Datasets/ncep.reanalysis/surface_gauss/land.sfc.gauss.nc",
+  "land_mask_sha256": "7da97a6d508a499302002891bb11e7c284d99019698cb89de1b5f5da37df3ca3",
+  "land_interpolation": "bilinear weights renormalized on land only; nearest land within 3 angular degrees when no land corners"
+}

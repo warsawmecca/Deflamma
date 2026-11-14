@@ -1,0 +1,30 @@
+{
+  "release": "2026-11-14-std-trigger-review",
+  "baseline_library_file_id": "libfile_28e84900a3888191bd4116f8c8366f81",
+  "baseline_version": 21,
+  "baseline_zip_sha256": "b9f4fd695f161a1be2e7bfc3bacfc01c732d53d59a924b164f808060fe0582c8",
+  "validation": {
+    "python_tests": 17,
+    "actual_cases_fire": 8,
+    "actual_cases_nonfire": 1,
+    "http_auth": true,
+    "dom_functional": true,
+    "visual_browser": false,
+    "server_deployed": false,
+    "real_national_checkpoint_pipeline": true
+  },
+  "bootstrap": {
+    "past_score_samples": 48,
+    "raw_samples_with_boundaries_and_anchor": 51,
+    "download_workers": 4,
+    "chronological_ema": true,
+    "atomic_commit": true
+  },
+  "reviews": {
+    "ttl_minutes": 30,
+    "max_pending": 500,
+    "completed_days": 7,
+    "expired_hours": 24,
+    "db_mib": 64
+  }
+}

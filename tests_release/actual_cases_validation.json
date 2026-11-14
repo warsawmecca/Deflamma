@@ -1,0 +1,38 @@
+[
+  {
+    "case": "sancheong2025",
+    "passed": true
+  },
+  {
+    "case": "uiseong2025",
+    "passed": true
+  },
+  {
+    "case": "ulju2025",
+    "passed": true
+  },
+  {
+    "case": "hamyang",
+    "passed": true
+  },
+  {
+    "case": "miryang",
+    "passed": true
+  },
+  {
+    "case": "uiseong",
+    "passed": true
+  },
+  {
+    "case": "gwangyang",
+    "passed": true
+  },
+  {
+    "case": "yesan",
+    "passed": true
+  },
+  {
+    "case": "nonfire_P0466C0528",
+    "passed": false
+  }
+]
